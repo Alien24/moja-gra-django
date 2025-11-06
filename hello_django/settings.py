@@ -27,7 +27,8 @@ DEBUG = True
 
 import os
 
-ALLOWED_HOSTS = ['moja-gra-django.azurewebsites.net', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['moja-gra-django.azurewebsites.net']
+
 
 
 # Application definition
