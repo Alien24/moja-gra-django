@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-y$u*31-m=ah$+i7+80-yxn^1=nhdle7c*od5f^6!9=p9w$usc5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['moja-gra-django.azurewebsites.net', 'localhost', '127.0.0.1']
+import os
+
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "localhost").split(",")
 
 
 # Application definition
