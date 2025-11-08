@@ -27,8 +27,12 @@ DEBUG = True
 
 import os
 
-ALLOWED_HOSTS = ['moja-gra-django.azurewebsites.net']
+ALLOWED_HOSTS = ['*']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://moja-gra-django.azurewebsites.net',
+    'https://moja-gra-django.scm.azurewebsites.net',
+]
 
 
 # Application definition
